@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, ArrowRight, Sparkles } from 'lucide-react';
 import { PERSONAL_DETAILS } from '../constants';
 import { Section } from '../types';
+import profileImg from "@/assets/366dd543-7f94-4923-99fb-2d07a32d753f.jpg";
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -107,9 +108,9 @@ const Hero = () => {
             {/* Avatar Mask */}
             <div className="relative w-64 h-64 md:w-[450px] md:h-[450px] rounded-full p-2 bg-gradient-to-tr from-emerald-500/20 to-transparent border border-emerald-500/20 shadow-2xl backdrop-blur-xl overflow-hidden transition-transform duration-700 group-hover:scale-[1.03]">
               <div className="w-full h-full rounded-full overflow-hidden border-2 border-slate-900 shadow-inner">
-                <img 
-                  src={"images/366dd543-7f94-4923-99fb-2d07a32d753f.jpg"} 
-                  alt={PERSONAL_DETAILS.name} 
+               <img
+                  src={profileImg}
+                  alt={PERSONAL_DETAILS.name}
                   className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
                 />
               </div>
