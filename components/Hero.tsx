@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, ArrowRight, Sparkles } from 'lucide-react';
 import { PERSONAL_DETAILS } from '../constants';
 import { Section } from '../types';
-import profileImg from "@/assets/366dd543-7f94-4923-99fb-2d07a32d753f.jpg";
+import profileImg from "images/366dd543-7f94-4923-99fb-2d07a32d753f.jpg";
 
 const Hero = () => {
   const [text, setText] = useState('');
